@@ -31,7 +31,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 25px;
   margin-top: 30px;
   justify-items: center; /* centre les colonnes si elles ne remplissent pas toute la largeur */
