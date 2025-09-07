@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VVDOWNLOAD</title>
+  <link rel="stylesheet" href="style.css">
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Fenêtre de connexion -->
+  <div id="login-overlay">
+    <div id="login-box">
+      <h2>Connexion</h2>
+      <input type="text" id="username" placeholder="Identifiant"><br>
+      <input type="password" id="password" placeholder="Mot de passe"><br>
+      <button onclick="checkLogin()">Se connecter</button>
+      <p id="login-error">Identifiants incorrects</p>
+    </div>
+  </div>
+
+  <!-- Contenu du site caché tant que non connecté -->
+  <div id="site-content" style="display:none;">
+    <!-- Image de couverture -->
+    <section class="cover">
+      <img src="images/cover-top.gif" alt="Couverture">
+    </section>
+
+    <!-- Section cyclorama -->
+    <section class="about">
+      <h2>Le meilleur website de l’Internet pour des super films</h2>
+      <p>
+        <p>
+Ce magnifique website propose une sélection non exhaustive, mais pas moins qualitative, des meilleurs films avec les liens de téléchargement. Ne donnez votre mot de passe à personne, sinon je serai obligé de fermer le site et de vous passer à tabac. Les films sont classés du plus facile au plus difficile à regarder : les plus divertissants au début et les plus profonds à la fin. Bien sûr, les meilleurs sont à la fin, mais il faut rester concentré.  Après visionnage, n'hésitez pas à faire un tour sur <a href="https://www.senscritique.com" target="_blank" class="lien-senscritique">SensCritique</a>
+</a>.
+</p>
+</p>
+    </section>
+
+    <!-- Section réalisations -->
+    <section class="realisations">
+      <h2>Les Films</h2>
+      <div class="grid">
+
+     <div class="real-item">
+  <img src="images/real12.webp" alt="Réalisation 12">
+  <h3>Green Book (Peter Farrelly)</h3>
+
+  <p>Un pianiste noir et son chauffeur italo-américain traversent l’Amérique ségrégationniste des années 60.</p>
+  <a href="images/real12.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real29.webp" alt="Réalisation 29">
+  <h3>Lion (Garth Davis)</h3>
+
+  <p>Un enfant indien perdu est adopté en Australie et, adulte, cherche à retrouver sa famille.</p>
+  <a href="images/real29.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real32.webp" alt="Réalisation 32">
+  <h3>Ma vie de courgette (Claude Barras)</h3>
+
+  <p>Un orphelin arrive dans un foyer et découvre l’amitié et l’espoir malgré les blessures de la vie.</p>
+  <a href="images/real30.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real4.webp" alt="Réalisation 4">
+  <h3>Le Règne animal (Thomas Cailley)</h3>
+
+  <p>Dans une France frappée par une mutation transformant des humains en créatures hybrides.</p>
+<p>"Pour voir un film fantastique sans la morale américaine."</p>  
+  <a href="images/real4.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real24.webp" alt="Réalisation 24">
+  <h3>Don’t Look Up (Adam McKay)</h3>
+
+  <p>Deux astronomes tentent d’alerter le monde sur une comète destructrice ignorée par les élites.</p>
+  <a href="images/real24.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real5.webp" alt="Réalisation 5">
+  <h3>Jojo Rabbit (Taika Waititi)</h3>
+
+  <p>Un enfant endoctriné par le nazisme voit ses certitudes bouleversées en découvrant une jeune fille juive cachée chez lui.</p>
+  <a href="images/real5.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real1.webp" alt="Réalisation 1">
+  <h3>Manbiki Kazoku (Hirokazu Kore-eda)</h3>
+
+  <p>Une famille pauvre vit de petits vols et recueille une fillette abandonnée.</p>
+  <a href="images/real1.webp" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real16.webp" alt="Réalisation 16">
+  <h3>Yannick (Quentin Dupieux)</h3>
+
+  <p>Un spectateur interrompt une pièce de théâtre pour imposer son propre récit.</p>
+  <a href="images/real16.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real26.webp" alt="Réalisation 26">
+  <h3>Les Hirondelles de Kaboul (Zabou Breitman & Éléa Gobbé-Mévellec)</h3>
+
+  <p>Dans un Kaboul sous le régime taliban, deux couples voient leur destin bouleversé par la violence.</p>
+  <a href="images/real26.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real22.webp" alt="Réalisation 22">
+  <h3>Interdit aux chiens et aux Italiens (Alain Ughetto)</h3>
+
+  <p>Un film d’animation retraçant l’histoire de l’émigration italienne à travers la famille du réalisateur.</p>
+  <a href="images/real22.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real28.webp" alt="Réalisation 28">
+  <h3>Dheepan (Jacques Audiard)</h3>
+
+  <p>Un ex-combattant tamoul et deux inconnues se font passer pour une famille afin de trouver refuge en France.</p>
+  <a href="images/real28.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real27.webp" alt="Réalisation 27">
+  <h3>Mommy (Xavier Dolan)</h3>
+
+  <p>Une mère élève seule son fils impulsif et violent.</p>
+  <a href="images/real27.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real20.webp" alt="Réalisation 20">
+  <h3>Relatos salvajes (Damián Szifron)</h3>
+
+  <p>Six histoires où des individus ordinaires basculent dans la folie et la vengeance.</p>
+<p>"Génial."</p>  
+  <a href="images/real20.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real7.webp" alt="Réalisation 7">
+  <h3>99 francs (Jan Kounen)</h3>
+
+  <p>Un publicitaire cynique remet en cause son métier et l’univers impitoyable de la pub.</p>
+  <a href="images/real7.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real2.webp" alt="Réalisation 2">
+  <h3>Triangle of Sadness (Ruben Östlund)</h3>
+
+  <p>Une satire sociale où des ultra-riches voient leur croisière de luxe tourner au cauchemar.</p>
+<p>"Mon film préféré."</p>  
+  <a href="images/real2.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real17.webp" alt="Réalisation 17">
+  <h3>Scarface (Brian De Palma)</h3>
+
+  <p>Un immigré cubain gravit les échelons du crime à Miami, jusqu’à sa chute.</p>
+<p>"Si vous ne l’avez jamais vu il n’est pas comme on pourrait se l’imaginer."</p>  
+  <a href="images/real17.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real15.webp" alt="Réalisation 15">
+  <h3>Kaibutsu (Hirokazu Kore-eda)</h3>
+
+  <p>Un drame scolaire dévoilé par différents points de vue, révélant les malentendus et la vérité cachée.</p>
+  <a href="images/real15.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real14.webp" alt="Réalisation 14">
+  <h3>The Substance (Coralie Fargeat)</h3>
+
+  <p>Une actrice vieillissante tente un traitement radical qui lui offre une version rajeunie d’elle-même.</p>
+<p>"Ne pas regarder en mangeant."</p>  
+  <a href="images/real14.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real21.webp" alt="Réalisation 21">
+  <h3>Oranges sanguines (Jean-Christophe Meurisse)</h3>
+
+  <p>Des récits croisés, entre satire sociale et absurdité, sur la société contemporaine.</p>
+  <a href="images/real21.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real11.webp" alt="Réalisation 11">
+  <h3>Les Chambres rouges (Pascal Plante)</h3>
+
+  <p>Deux jeunes femmes obsédées par un tueur en série suivent son procès comme une fascination morbide.</p>
+  <a href="images/real11.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real23.webp" alt="Réalisation 23">
+  <h3>Riverboom (Claude Baechtold)</h3>
+
+  <p>Un documentaire explorant le travail du collectif photographique suisse Riverboom.</p>
+<p>"Le meilleur film de voyage du monde."</p>  
+  <a href="images/real23.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real25.webp" alt="Réalisation 25">
+  <h3>Perfect Blue (Satoshi Kon)</h3>
+
+  <p>Une idole japonaise reconvertie en actrice sombre dans la paranoïa et la confusion entre fiction et réalité.</p>
+  <a href="images/real25.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real3.webp" alt="Réalisation 3">
+  <h3>American Psycho (Mary Harron)</h3>
+
+  <p>À Wall Street, un golden boy cache ses pulsions meurtrières derrière une façade parfaite.</p>
+<p>"Les alphas n’ont pas dû comprendre le film."</p>  
+  <a href="images/real3.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real9.webp" alt="Réalisation 9">
+  <h3>A Clockwork Orange (Stanley Kubrick)</h3>
+
+  <p>Un jeune délinquant violent est soumis à un traitement expérimental de réhabilitation.</p>
+<p>"Génial."</p>  
+  <a href="images/real9.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real6.webp" alt="Réalisation 6">
+  <h3>Climax (Gaspar Noé)</h3>
+
+  <p>Une troupe de danseurs sombre dans la folie après avoir consommé, à leur insu, une sangria droguée.</p>
+  <a href="images/real6.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real31.webp" alt="Réalisation 31">
+  <h3>La mesita del comedor (Caye Casas)</h3>
+
+  <p>Un couple achète une petite table, objet banal qui devient le déclencheur d’un drame.</p>
+<p>"Ne pas voir après avoir accouché."</p>  
+  <a href="images/real30.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real18.webp" alt="Réalisation 18">
+  <h3>Enter the Void (Gaspar Noé)</h3>
+
+  <p>À Tokyo, l’esprit d’un dealer assassiné erre entre souvenirs, hallucinations et réincarnation.</p>
+  <a href="images/real18.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real10.webp" alt="Réalisation 10">
+  <h3>Irréversible (Gaspar Noé)</h3>
+
+  <p>Un drame raconté à rebours, marqué par une nuit de violence et de vengeance.</p>
+  <a href="images/real10.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real30.webp" alt="Réalisation 30">
+  <h3>Le Daim (Quentin Dupieux)</h3>
+ 
+  <p>Un homme développe une obsession absurde pour sa veste en daim.</p>
+  <p>"Génial mais si vous n’aimez pas je comprends."</p>  
+  <a href="images/real30.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real8.webp" alt="Réalisation 8">
+  <h3>The Zone of Interest (Jonathan Glazer)</h3>
+
+  <p>Le quotidien d’une famille vivant paisiblement près d’Auschwitz, ignorant l’horreur à quelques mètres.</p>
+  <a href="images/real8.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real13.webp" alt="Réalisation 13">
+  <h3>Lux Æterna (Gaspar Noé)</h3>
+
+  <p>Deux actrices évoquent la création et la sorcellerie avant qu’un tournage ne vire au chaos.</p>
+<p>"À voir après avoir vu tous les Gaspar Noé."</p>  
+  <a href="images/real13.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real19.webp" alt="Réalisation 19">
+  <h3>Titane (Julia Ducournau)</h3>
+
+  <p>Une femme au passé violent et au corps marqué tente de se reconstruire dans un lien inattendu.</p>
+<p>"Sur l’identité de genre, très dur à voir."</p>  
+  <a href="images/real19.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+<div class="real-item">
+  <img src="images/real33.webp" alt="Réalisation 33">
+  <h3>Mad God (Phil Tippett)</h3>
+
+  <p>Un film d'animation expérimental en stop-motion, dans un monde cauchemardesque peuplé de créatures monstrueuses et de paysages apocalyptiques, reflet d'une vision dystopique et hallucinée.</p>
+  <a href="images/real33.jpg" download class="download-btn">Télécharger</a>
+</div>
+
+    
+      </div>
+    </section>
+
+    <!-- Image avant contact -->
+    <section class="cover">
+      <img src="images/cover-bottom.gif" alt="Couverture">
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact">
+      <h2>Si vous avez des suggestions, envoyez-moi un message.</h2>
+      <p>Email : victor.vivot@gmail.com</p>
+      <p>Téléphone : +33 6 44 93 03 59</p>
+    </section>
+  </div>
+
+  <script>
+    // Liste des identifiants autorisés
+    const users = [
+      { username: "admin", password: "cyclope123" },
+      { username: "pauline", password: "photo2025" },
+      { username: "victor", password: "atelier" },
+      { username: "thomas", password: "cigwood" },
+      { username: "a", password: "a" }
+    ];
+
+    function checkLogin() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const errorMsg = document.getElementById("login-error");
+
+      const match = users.find(u => u.username === user && u.password === pass);
+
+      if (match) {
+        document.getElementById("login-overlay").style.display = "none";
+        document.getElementById("site-content").style.display = "block";
+      } else {
+        errorMsg.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
